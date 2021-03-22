@@ -1,0 +1,96 @@
+{
+  "id": "87207c02-23b5-490d-a495-0e0fe7aafb84",
+  "version": "2.0",
+  "name": "jinan",
+  "url": "https://www.agoda.com",
+  "tests": [{
+    "id": "326c45f2-9964-49b9-b436-43f5e7700cbd",
+    "name": "jinan",
+    "commands": [{
+      "id": "d7d360e1-500b-4f9c-b3ba-25f4b387b6a0",
+      "comment": "",
+      "command": "open",
+      "target": "/zh-tw/jingan-classic-inn/reviews/taipei-tw.html?checkIn=2020-03-30&los=1&adults=2&rooms=1&cid=1826371&tag=9036467c-2252-b5c0-dad5-2ddffd49e3fe&searchrequestid=e4aa7e18-b2e8-40c8-883d-3d2fbf38aac5&travellerType=1&tspTypes=2%2C7",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e76392ef-f8b3-4803-9bdd-bed17f1c3774",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x803",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f229aa24-1191-47fb-b629-59df378dd421",
+      "comment": "",
+      "command": "click",
+      "target": "css=.select-dropdown-wrapper:nth-child(3)",
+      "targets": [
+        ["css=.select-dropdown-wrapper:nth-child(3)", "css:finder"],
+        ["xpath=(//div[@value='0'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='reviewFilterSection']/div/div[3]", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3eba66e-618a-475d-834c-448fee9aa5c6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.select-dropdown-wrapper:nth-child(3) .select-dropdown-list__item:nth-child(2) span:nth-child(2)",
+      "targets": [
+        ["css=.select-dropdown-wrapper:nth-child(3) .select-dropdown-list__item:nth-child(2) span:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='reviewFilterSection']/div/div[3]/div/ul/li[2]/span/span[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/ul/li[2]/span/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5c0196b-481a-446b-91ea-29ba81ecb204",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Review-paginator",
+      "targets": [
+        ["css=.Review-paginator", "css:finder"],
+        ["xpath=//div[@id='reviewSection']/div[5]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ac7ebe5-91fc-42a9-b733-5554c35db819",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Review-paginator-button",
+      "targets": [
+        ["css=.Review-paginator-button", "css:finder"],
+        ["xpath=(//button[@type='button'])[141]", "xpath:attributes"],
+        ["xpath=//div[@id='reviewSection']/div[5]/button", "xpath:idRelative"],
+        ["xpath=//div[5]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'查看更多住宿評鑑')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ea0c215d-3357-4afd-b085-5b0861ee2f94",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,22634)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0d459b43-00cf-4492-a674-c64f2eb50471",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "0bba4285-74b6-40d7-a28f-c3bec23d3766",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["326c45f2-9964-49b9-b436-43f5e7700cbd"]
+  }],
+  "urls": ["https://www.agoda.com/"],
+  "plugins": []
+}
